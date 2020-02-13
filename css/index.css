@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.startPage {
+	z-index: 3;
+	height: 100%;
+	width: 40%;
+	margin-left: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/start.jpg) center;
+	background-size: 100% 100%;
+	position: relative;
+
+}
+
+.startPage button {
+	outline: none;
+	font-size: 0.08rem;
+	font-weight: 5;
+	color: #454545;
+	width: 30%;
+	height: 0.2rem;
+	margin-left: 50%;
+	margin-top: -15px;
+	background-color: rgba(176, 233, 200, 0);
+	border-radius: 10px;
+	border: 0;
+	transition 2s;
+}
+
+.startPage button:hover {
+	margin-top: 5px;
+	box-shadow: -5px 10px 10px grey;
+	border-radius: 15px;
+}
+
+.gamePage {
+	z-index: 2;
+	width: 40%;
+	margin-left: 30%;
+	height: 100%;
+	/* background: url(../img/game.jpg) no-repeat center;
+	background-size: 100% 100%; */
+	background-color: rgba(176, 233, 200, 0.5);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.gamePage .ban {
+	margin-top: 0.1rem;
+	height: 300px;
+	width: 100%;
+	background: url(../img/ban2.jpg) no-repeat center;
+	background-size: 100% 100%;
+	position: relative;
+	float: left;
+}
+
+.gamePage .time {
+	color: black;
+	font-weight: 25;
+	font-size: .06rem;
+	position: absolute;
+	float: left;
+	background-color: rgba(176, 233, 200, 1);
+	height: 0.1rem;
+	width: 100%;
+	padding-top: 5px;
+}
+
+.remainder-time {
+	float: left;
+	padding-left: 5%;
+	width: 50%;
+}
+
+.remainder-question {
+	float: left;
+	text-align: right;
+	padding-right: 5%;
+	width: 50%;
+}
+
+.gamePage .question {
+	float: left;
+	height: auto;
+	width: 100%;
+	color: black;
+	font-size: .08rem;
+	/* background-color: turquoise; */
+	margin-bottom: 25px;
+}
+
+.gamePage .answer {
+	height: auto;
+	width: 100%;
+	color: #fff;
+	font-size: .08rem;
+	margin-top: 15px;
+}
+
+.gamePage .answer button {
+	width: 100%;
+	height: auto;
+	outline: none;
+	font-size: .06rem;
+	color: white;
+	margin-top: 15px;
+	padding: 15px 0;
+	border-radius: 10px;
+	border: 0;
+	box-shadow: 0 2px 2px 1px rgba(255, 255, 255, .3);
+	background-color: black;
+}
